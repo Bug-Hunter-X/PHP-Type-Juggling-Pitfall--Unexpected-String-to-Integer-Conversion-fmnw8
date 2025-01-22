@@ -1,0 +1,2 @@
+function foo(int $a, int $b): int { return $a + $b; } $x = foo(1, 2); // Correct usage, now typehinted
+function foo(int $a, int $b): int { if (!is_int($a) || !is_int($b)) { throw new InvalidArgumentException('Both arguments must be integers.'); } return $a + $b; } $x = foo(1, 2);
