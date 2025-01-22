@@ -1,0 +1,1 @@
+This repository demonstrates a common yet subtle bug in PHP related to type juggling.  The `foo` function is defined to accept two integers, but it silently converts the string '2' to an integer, leading to an unexpected result. The solution shows how to use strict type checking to prevent this type of error.
